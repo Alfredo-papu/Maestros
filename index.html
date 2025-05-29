@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Maestros</title>
+</head>
+<body background="img/Fondo.jpg" style="background-size: 100%;">
+	<h1 align="center" style="font-size: 30px; font-family: system-ui;">MAESTROS DEL CBTIS 206</h1>
+	<br>
+<center>
+     	<label>Maestros:</label>
+    <select name="selecciona" size="1" id="MaS" onchange="M()">
+    	<option value="0">Inicio</option>
+    	<option value="1">Alonda Zalvala</option>
+    	<option value="2">LEYVA ISRAEL </option>
+    	<option value="3">ANTUNEZ MEDINA</option>
+    	<option value="4">MONTOYA CORONADO</option>
+    	<option value="5">GUERRERO ALCANTAR</option>
+    </select>
+
+<p style="color: red; font-size: 20px;" id="Titulo"></p>
+<br>
+
+<img id="img" width="260" height="250" border="black">
+<p style="color: black; font-size: 30px;" id="imprimir" ></p>
+
+
+<script type="text/javascript">
+	function M()
+	{
+		var ins = document.getElementById("MaS").value;
+
+		if (parseInt(ins)==0) {
+					document.getElementById("img").src="img/Inicio.jpg";
+					document.getElementById("imprimir").innerHTML="";
+					document.getElementById("Titulo").innerHTML="";
+				}
+		if (parseInt(ins)==1) {
+					document.getElementById("img").src="img/Alondra.jpg";
+					document.getElementById("imprimir").innerHTML="Es una especialidad muy divertida, la porfesora Alondra enseña de una forma divertida y clara, enseña sobre la programacion y creacion sobre paginas web y el uso de base de datos.";
+					document.getElementById("Titulo").innerHTML="-Programacion-";
+				}
+		if (parseInt(ins)==2) {
+					document.getElementById("img").src="img/Matematicas.jpg";
+					document.getElementById("imprimir").innerHTML="La clase es facil de entender gracias al profesora LEYVA, es una persona alegre y con ganas de enseñar, las matematicas de esta clase son sensillas de entender.";
+					document.getElementById("Titulo").innerHTML="-Matematicas-";
+				}
+		if (parseInt(ins)==3) {
+					document.getElementById("img").src="img/Ingles.jpg";
+					document.getElementById("imprimir").innerHTML="Esta materia dirigida por la Profesora ANTUNEZ es motivadora para aprender ingles, enseña a su propio modo, nos ayuda a comprender el deletreo de las palabras en ingles.";
+					document.getElementById("Titulo").innerHTML="-Ingles-";
+				}
+		if (parseInt(ins)==4) {
+					document.getElementById("img").src="img/Humanidades.jpg";
+					document.getElementById("imprimir").innerHTML="Materia dirigidad por el Profesor MONTOYA, nos hace refleccionar y reconocer nuestra vida, junto con las decisiones que tomamos eventualmente.";
+					document.getElementById("Titulo").innerHTML="-Humanidades-";
+				}
+		if (parseInt(ins)==5) {
+					document.getElementById("img").src="img/CienciasS.jpg";
+					document.getElementById("imprimir").innerHTML="Materia dirigida por el Profesor GUERRERO,nos enseña sobre diferentes religiones con su modo de tratar los temas, es alguien motivador.";
+					document.getElementById("Titulo").innerHTML="- Ciencias Sociales -";
+				}
+	}
+
+</script>
+
+</center>
+
+
+</body>
+</html>
